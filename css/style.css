@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: #494949;
+}
+a:hover{
+  color: #fff;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  font-family: 'agency fb';
+}
+.section-title{
+  margin-left: 55%;
+  font-family: 'agency fb';
+  color: #494949;
+  padding-top: 20px;
+}
+ul {
+  list-style: none;
+}
+
+.nav {
+  position: fixed;
+  float:right;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon-container-kobe{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo {
+  flex: 0 0 50%;
+  background: #fc9f25;
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+
+.logo h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center; 
+}
+
+.logo span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.menu-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.menu-links ul {
+  width: 100%;
+}
+
+.menu-links ul li {
+  padding: 10px;
+  color: #494949;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu-links ul li:hover {
+  background: #494949;
+  color: #fff;
+}
+
+.scrolldown {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  transform: rotate(-90deg);
+  position: relative;
+   left: -40%;
+  top: 40%;
+  width: 118%;
+}
+
+.scrolldown::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid #000;
+  width: 40%;
+  margin: 0 10px 0 0;
+  transform: translateY(10px);
+}
+
+.text {
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  transform: translateY(-50%);
+  text-align: right;
+  color: #494949;
+}
+.kobe{
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+.text .title {
+  font-size: 150px;
+}
+
+.watchnow {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #fc9f25;
+  padding: 30px 180px 30px 30px;
+}
+
+.watchnow a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+}
+
+.fa-play {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.media {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  float: right;
+}
+
+.media ul li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+  color: #494949;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.media ul li:hover {
+  background: #fc9f25;
+}
+
+.ellipse-container {
+  width: 608px;
+  height: 608px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.ellipse {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.ellipse.thin {
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-color: #494949;
+  opacity: .5;
+}
+
+.ellipse.thick {
+  width: 93%;
+  height: 93%;
+  border-width: 10px;
+  border-color: #fff;
+  transform: rotate(-45deg);
+  top: 12px;
+  left: 12px;
+}
+
+.ellipse.yellow {
+  width: 93%;
+  height: 93%;
+  border-width: 10px;
+  border-color: #fc9f25 transparent;
+  transform: rotate(-45deg);
+  top: 12px;
+  left: 12px;
+  animation: ellipseRotate 15s ease-in-out infinite;
+}
+
+@keyframes ellipseRotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+
+.circle1,
+.circle2 {
+  border-style: solid;
+  width: 64px;
+  height: 64px;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.5);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  top: 150px;
+  left: 150px;
+}
+
+.circle2 {
+  bottom: 150px;
+  right: 130px;
+}
+
+.circle1::before,
+.circle1::after,
+.circle2::before,
+.circle2::after {
+  content: '';
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle1::before,
+.circle2::before {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  z-index: 1;
+}
+
+.circle1::after,
+.circle2::after {
+  width: 40px;
+  height: 40px;
+  background: #fc9f25;
+}
+
+.circle1 span,
+.circle2 span {
+  position: absolute;
+  top: 25px;
+  width: 100px;
+  font-size: 14px;
+}
+
+.circle1 span {
+  left: 75px;
+}
+
+.circle2 span {
+  left: -90px;
+}
+
+
+#container-footer {
+  color:#999;
+  text-transform: uppercase;
+  font-size:72px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:relative;
+  text-align: center;
+  display:block;
+  margin-left: 5%;
+  bottom: 0;
+}
+
+#flip {
+  height:80px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:90px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#5f22a4;
+}
+#flip div:first-child div {
+  background:#066d3f;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-280px;}
+  33% {margin-top:-280px;}
+  38% {margin-top:-140px;}
+  66% {margin-top:-140px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+.poster{
+  width: 83vw;
+  margin-left: 15%;
+  height: 100vh;
+  background-color: #5f22a4;
+  
+}
+.appear {
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.appear.inview {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+.Cart{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cart {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cart__count {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: inline-block;
+  padding: 2px 7px;
+  color: #fff;
+  background-color: crimson;
+  border-radius: 100%;
+}
+.profile {
+  position: absolute;
+  right: 32px;
+  top: -10px;
+  display: inline-block;
+  padding: 2px 7px;
+  color: #fff;
+  width: 20px;
+  height: 29px;  
+  border-radius: 100%;
+}

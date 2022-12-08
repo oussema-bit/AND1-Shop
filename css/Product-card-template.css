@@ -1,0 +1,199 @@
+.container-product{
+    width: 300px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'agency fb';
+}
+.Offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50vw;
+    height: auto;
+    position: relative;
+    margin-left: 30%;
+}
+.product{
+    width: 100%;
+    height: 90%;
+    top: 10px;
+   perspective: 1000px; 
+}
+.product-inner{
+    position:relative;
+    width: 90%;
+    height: 90%;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.product-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateZ(25px);
+    
+}
+/* lebron 18*/
+.product-top{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#760000,#280773);
+    color: #fff;
+}
+
+.product-top h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+.product-top9 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+.product-bottom{
+    padding: 50px 30px;
+}
+.product-bottom p{
+    font-size: 20px;
+}
+.product-bottom h2{
+    margin-bottom: 15px;
+    color: #008394;
+    letter-spacing: 1px;
+}
+.product-bottom h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px;
+}
+.product-bottom h1 span{
+    color: #008394;
+}
+.product-bottom button{
+    padding: 9px 25px;
+    color: #008394;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 30px;
+    outline: none;
+    cursor:pointer;
+    transition: .5s;
+    width: 100px;
+    font-size: 15px;
+}
+.product-bottom button:hover{
+    color: white;
+    background: #008394;
+}
+.color-select{
+    display: flex;
+    float: right;
+    margin-top: -20px;
+}
+.customization{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-item{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    padding: 5px;
+    box-shadow: -5px 0 8px 2px rgba(156,216,244,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+.select-item img{
+    width: 80%;
+    padding-top: 10%;
+    transition: .5s;
+}
+.select-item:hover{
+    background: rgba(156,216,244,0.5);
+    box-shadow: none;
+    transition: .5s;
+    
+}
+
+.product-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    transform: translateZ(-25px) rotateY(180deg);
+}
+
+.product-left, .product-right{
+    width: 50px;
+    height: 100%;
+    background: white;
+    transform: rotateY(90deg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+    
+}
+.product-right{
+    transform: rotateY(-90deg);
+    left: auto;
+    right: -25px;
+}
+.frontImg{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px) rotate(30deg);
+    transition: 1s;
+    z-index: 100;
+}
+.backImg{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+
+#frontImg3{
+    left: 45px; transform: rotate(30deg);top: 0;
+}
+#backImg3{
+ transform: rotate(30deg);top: -5px;
+}
+#leftclick3{
+    top: -5%;
+}
+#rightclick3{
+padding-top: 0;
+}
+#leftclick3{
+    padding-top: 0;
+}
+#notclick3{
+    padding-top: 0;
+}
+
+#frontImg24{
+   width: 224px;
+}
+#frontImg29{
+    width: 211px;
+    top: 92px;
+    left: 32px;
+}
+#frontImg7{
+    width: 238px;
+    top: 35px;
+}

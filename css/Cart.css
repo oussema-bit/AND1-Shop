@@ -1,0 +1,82 @@
+.Cart-ticket{
+    font-size: 30px;
+    width: 20%;
+    height: 25%;
+    float: right;
+    margin-right: 5%;
+}
+
+.prod-list-item{
+    width: 56%;
+   display: grid;
+   grid-template-columns: 30% 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.prod-img{
+    width: 100%;
+}
+
+.prod-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.prod-detail-name{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.prod-detail-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+}
+.minus-btn,.plus-btn,.prod-quant{
+    border: none;
+    background: transparent;
+    text-align: center;
+    border-radius: 40%;
+    font-family: 'agency fb';
+    cursor: pointer;
+}
+.minus-btn,.plus-btn{
+    font-size: 20px
+}
+.prod-quant{
+    font-size: 25px;
+    width: 60px;
+    text-align: center;
+}
+.minus-btn:hover,.plus-btn:hover{
+    background-color: #fc9f25;
+    color: #494949;
+}
+.remove-btn{
+    border: none;
+    background: red;
+    text-align: center;
+    font-family: 'agency fb';
+    color: white;
+    font-size: 27px;
+    border-radius: 10%;
+    padding: 5px;
+    cursor: pointer;
+}
+.Order-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+.Order-btn{
+    border: none;
+    background: green;
+    text-align: center;
+    font-family: 'agency fb';
+    color: white;
+    font-size: 20px;
+    border-radius: 10%;
+    padding: 5px;
+    cursor: pointer;
+}

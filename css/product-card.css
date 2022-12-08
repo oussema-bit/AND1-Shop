@@ -1,0 +1,422 @@
+.container-product{
+    width: 300px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'agency fb';
+}
+.Offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 50vw;
+    height: auto;
+    position: relative;
+    margin-left: 25%;
+}
+.product{
+    width: 100%;
+    height: 90%;
+    top: 10px;
+   perspective: 1000px; 
+}
+.product-inner{
+    position:relative;
+    width: 90%;
+    height: 90%;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.product-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateZ(25px);
+    
+}
+/* lebron 18*/
+.product-top{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#760000,#280773);
+    color: #fff;
+}
+
+.product-top h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+/* kobe12 */
+.product-top1{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#ff0000,#ffffff);
+    color: #fff;
+}
+.product-top1 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+
+/* Jordan*/
+.product-top3{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#000000,#4a009f);
+    color: #fff;
+}
+.product-top3 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+/* Curry*/
+.product-top4{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#fbbb25,#29315f);
+    color: #fff;
+}
+.product-top4 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+/* James*/
+.product-top5{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#5d4790,#f8c826);
+    color: #fff;
+}
+.product-top5 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+/* James23*/
+.product-top6{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#ffca12,#151618);
+    color: #fff;
+}
+.product-top6 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+/*Short idk*/
+.product-top7{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#24293d,#ffffff);
+    color: #fff;
+}
+.product-top7 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+
+/*Short Nike*/
+.product-top8{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#001045,#d21732);
+    color: #fff;
+}
+.product-top8 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+/*Short Lakers*/
+.product-top9{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(#4e3880,#f5bb1e);
+    color: #fff;
+}
+.product-top9 h1{
+    font-size: 120px;
+    font-style: italic;
+    margin-left: 20px;
+    opacity: .3;
+}
+.product-bottom{
+    padding: 50px 30px;
+}
+.product-bottom p{
+    font-size: 20px;
+}
+.product-bottom h2{
+    margin-bottom: 15px;
+    color: #008394;
+    letter-spacing: 1px;
+}
+.product-bottom h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px;
+}
+.product-bottom h1 span{
+    color: #008394;
+}
+.product-bottom button{
+    padding: 9px 25px;
+    color: #008394;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 30px;
+    outline: none;
+    cursor:pointer;
+    transition: .5s;
+    width: 100px;
+    font-size: 15px;
+}
+.product-bottom button:hover{
+    color: white;
+    background: #008394;
+}
+.color-select{
+    display: flex;
+    float: right;
+    margin-top: -20px;
+}
+.customization{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-item{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    padding: 5px;
+    box-shadow: -5px 0 8px 2px rgba(156,216,244,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+.select-item img{
+    width: 80%;
+    padding-top: 10%;
+    transition: .5s;
+}
+.select-item:hover{
+    background: rgba(156,216,244,0.5);
+    box-shadow: none;
+    transition: .5s;
+    
+}
+/* Lebron*/
+.product-top2{
+    background: linear-gradient(#c370fd,#000000);
+}
+/* Kobe*/
+.product-top21{
+    background: linear-gradient(#7e7e7e,#000000);
+}
+/* Jordan*/
+.product-top23{
+    background: linear-gradient(#e5d41a,#ffffff);
+}
+.product-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    transform: translateZ(-25px) rotateY(180deg);
+}
+
+.product-left, .product-right{
+    width: 50px;
+    height: 100%;
+    background: white;
+    transform: rotateY(90deg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+    
+}
+.product-right{
+    transform: rotateY(-90deg);
+    left: auto;
+    right: -25px;
+}
+#frontImg1{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px) rotate(30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg1{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#frontImg2{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px) rotate(30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg2{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#frontImg3{
+    width: 200px;
+    left: 45px;
+    position: absolute;
+    transform: translateZ(50px)rotate(30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg3{
+    width: 200px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+    top: 20px;
+}
+#frontImg4{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg4{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#frontImg5{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg5{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#frontImg6{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg6{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#frontImg7{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg7{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#frontImg8{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg8{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
+#frontImg9{
+    width: 250px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+#backImg9{
+    width: 250px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px)rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
+}
